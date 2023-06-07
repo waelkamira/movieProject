@@ -272,7 +272,7 @@ actors.addEventListener('click', function(){
       let actorName = document.createElement('h4');
 
       actDiv.classList.add('actDiv');
-      if(actorNames.results[i].profile_path === null || actorNames.results[i].gender === 1){
+      if(actorNames.results[i].profile_path === null){
         continue;
       } else {
         actorImage.src = `${BACKDROP_BASE_URL + actorNames.results[i].profile_path}`;
